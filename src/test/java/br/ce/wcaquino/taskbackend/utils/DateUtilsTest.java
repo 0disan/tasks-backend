@@ -20,7 +20,7 @@ public class DateUtilsTest {
 
 	@Test
 	public void deveRetornarFalseParaDatasPassadas() {
-		assertFalse(isEqualOrFutureDate(date));
+		assertFalse(isEqualOrFutureDate(date.minusDays(1)));
 	}
 
 	@Test
